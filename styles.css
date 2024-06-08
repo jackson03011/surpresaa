@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #FFD6E5, #FFC2E5); /* Gradiente rosa */
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #FF007F; /* Rosa forte */
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+.button {
+    padding: 15px 32px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+#yesBtn {
+    background-color: #FF007F; /* Rosa forte */
+}
+
+#yesBtn:hover {
+    background-color: #D6006D; /* Rosa mais escuro */
+}
+
+#noBtn {
+    background-color: #FF4136; /* Vermelho */
+    position: absolute;
+}
+
+#noBtn:hover {
+    background-color: #D60000; /* Vermelho mais escuro */
+}
+
+#romanticImage {
+    display: none; /* Inicialmente oculta */
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.attributes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
+.advantages {
+    display: none; /* Inicialmente oculta */
+    margin-top: 20px;
+    font-size: 18px;
+    color: #FF007F; /* Rosa forte */
+}
+
+.show-advantages {
+    display: block;
+}

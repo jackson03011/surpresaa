@@ -3,12 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const timestampElement = document.getElementById('timestamp');
 
     function fetchSensorData() {
-        fetch('http://endereco-do-seu-servidor/sensor')
+        fetch('http://SEU_IP_PUBLICO:3000/sensor')
             .then(response => response.json())
             .then(data => {
-                const currentTime = new Date().toLocaleTimeString();
                 statusElement.textContent = data.movement ? 'Movimento Detectado' : 'Sem Movimento';
-                timestampElement.textContent = currentTime;
+                timestampElement.textContent = data.timestamp;
             })
             .catch(error => {
                 console.error('Erro ao buscar dados do sensor:', error);

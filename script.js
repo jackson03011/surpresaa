@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const timestampElement = document.getElementById('timestamp');
 
     function fetchSensorData() {
-        fetch('http://SEU_IP_PUBLICO:3000/sensor')
+        fetch('http://192.168.1.2:3000/sensor')
             .then(response => response.json())
             .then(data => {
                 statusElement.textContent = data.movement ? 'Movimento Detectado' : 'Sem Movimento';
